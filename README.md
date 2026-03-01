@@ -52,4 +52,4 @@ Este projeto foi construído utilizando tecnologias web puras (Vanilla), focando
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Lucas** *Licenciatura em Computação - UFRPE* *Desenvolvido em Pernambuco ☀️*
+Desenvolvido por **Lucas Madureiro Matias** - *Licenciatura em Computação - UFRPE*
