@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Acadêmica - LC</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+  <div id="alerta" class="alerta oculta"></div>
+
+  <h2>Disciplinas por Período</h2>
+
+  <div class="cabecalho-controles">
+    
+    <div class="progresso-wrapper">
+      <span class="badge">Calouro</span>
+      <div class="barra-fundo">
+        <div class="barra-preenchimento" id="barra-progresso">0%</div>
+      </div>
+      <span class="badge">Formado 🎓</span>
+    </div>
+
+    <div class="controles-topo">
+      <button id="btn-tema" onclick="toggleTema()">🌙 Modo Escuro</button>
+    </div>
+
+  </div>
+  
+  <div class="legenda-cores">
+    <div class="item-legenda"><span class="cor g1"></span> Formação do Docente</div>
+    <div class="item-legenda"><span class="cor g2"></span> Matemática</div>
+    <div class="item-legenda"><span class="cor g3"></span> Contexto Social e Profissional</div>
+    <div class="item-legenda"><span class="cor g4"></span> Fundamentos da Computação</div>
+    <div class="item-legenda"><span class="cor g5"></span> Tecnologia da Computação</div>
+    <div class="item-legenda"><span class="cor atividade"></span> Atividades Extras</div>
+  </div>
+
+  <div class="periodos" id="periodos"></div>
+
+  <h2>Grade Horária</h2>
+  
+  <div class="painel-estatisticas">
+    <div class="estatisticas">
+      <p>Disciplinas: <strong id="contador">0</strong></p>
+      <p>Carga Horária: <strong id="carga-horaria">0h</strong> / semana</p>
+    </div>
+    
+    <div class="grupo-botoes">
+      <button id="btn-baixar" onclick="baixarGrade()">📸 Baixar Grade</button>
+      <div class="botoes-limpeza">
+        <button class="btn-limpar" onclick="limparMaterias()" title="Limpar apenas as matérias da grade">🗑️ Matérias</button>
+        <button class="btn-limpar" onclick="limparExtras()" title="Limpar apenas suas atividades extras">🗑️ Extras</button>
+        <button class="btn-limpar alerta-btn" onclick="limparTudo()" title="Apagar tudo da grade">🚨 Tudo</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabela-container">
+    <table id="grade">
+      <thead>
+        <tr>
+          <th>Horário</th>
+          <th>Segunda</th>
+          <th>Terça</th>
+          <th>Quarta</th>
+          <th>Quinta</th>
+          <th>Sexta</th>
+          <th>Sábado</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-grade">
+        </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
