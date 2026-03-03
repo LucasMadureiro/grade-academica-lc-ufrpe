@@ -8,6 +8,12 @@ O projeto vai muito além de uma simples tabela de horários: ele funciona como 
 **Acesse o projeto online:** (https://lucasmadureiro.github.io/grade-academica-lc-ufrpe/)
 
 ---
+## ✨ Novidades da Versão 2.0 (Inteligência & UX)
+
+* **🤖 Algoritmo Auto-Completar (Solver):** Um clique preenche automaticamente todos os horários livres do seu periodo, priorizando cronologicamente as disciplinas dos primeiros períodos disponíveis, respeitando a lógica do curso.
+* **🔒 Motor de Requisitos Acadêmicos:** O sistema lê um banco de dados interno e bloqueia visual e funcionalmente disciplinas que exigem pré-requisitos não concluídos, além de processar a exigência de correquisitos simultâneos.
+* **🎯 Modo Guiado vs. 🎈 Modo Livre:** Liberdade total para o usuário. Alterne entre um sistema rígido (que bloqueia quebras de pré-requisitos) e um modo de planejamento livre para rascunhos.
+
 
 ## ✨ Funcionalidades Principais
 
